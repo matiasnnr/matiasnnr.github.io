@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" />
     <link
       href="https://fonts.googleapis.com/css2?family=Sen&display=swap"
       rel="stylesheet"
@@ -16,8 +16,11 @@
     <title>Matías</title>
   </head>
   <body>
-    <div class="container">
-      <div class="container__navigation"></div>
+    <div class="container" id="header">
+      <div class="container__navigation">
+        <a href="#header">Inicio 🏠</a>
+        <a href="#projects">Proyectos 🚀</a>
+      </div>
       <header class="container__header">
         <div class="container__header-content">
           <div class="container__header-left">
@@ -28,10 +31,20 @@
               Y a veces… Aventurero.
             </p>
             <div class="wrapper">
-              <i class="fa fa-5x fa-facebook-square"></i>
-              <i class="fa fa-5x fa-twitter-square"></i>
-              <i class="fa fa-5x fa-github-square"></i>
-              <i class="fa fa-5x fa-linkedin-square"></i>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/matiasnicolas.nunezrivas/"
+                ><i class="fa fa-5x fa-facebook-square"></i
+              ></a>
+              <a target="_blank" href="https://twitter.com/Matiasnnr"
+                ><i class="fa fa-5x fa-twitter-square"></i
+              ></a>
+              <a target="_blank" href="https://github.com/matiasnnr"
+                ><i class="fa fa-5x fa-github-square"></i
+              ></a>
+              <a target="_blank" href="https://www.linkedin.com/in/matiasnnr/"
+                ><i class="fa fa-5x fa-linkedin-square"></i
+              ></a>
             </div>
           </div>
           <div class="container__header-right">
@@ -63,57 +76,75 @@
             </p>
 
             <h2>Otras Rutas:</h2>
-            <a href="">Currículum</a>
-            <a href="">GitHub</a>
-            <a href="">Google Play</a>
-            <a href="">App Store</a>
-            <a href=""
+            <a
+              target="_blank"
+              href="https://firebasestorage.googleapis.com/v0/b/matiasnnr-repository.appspot.com/o/matiasnnr%2FCurri%CC%81culum%20Mati%CC%81as%20NNR.pdf?alt=media&token=c6e83ffc-6ec1-4040-a428-1dd7417fee33"
+              >Currículum 📄</a
+            >
+            <a target="_blank" href="https://github.com/matiasnnr">GitHub 😸</a>
+            <a
+              target="_blank"
+              href="https://play.google.com/store/search?q=mat%C3%ADasnnr&hl=es_CL"
+              >Google Play ►</a
+            >
+            <a href="#projects"
               >Algunos de los proyectos en los que he trabajado por diversión
               🤪</a
             >
           </div>
         </div>
       </header>
-      <section class="container__section">
+      <section class="container__section" id="projects">
         <div class="container__section-title"><h2>Proyectos</h2></div>
         <div class="container__section-content">
+          <div class="container__section-item">
+            <div class="container__section-image">
+              <img src="./assets/video-page.png" alt="video page" />
+            </div>
+            <p>
+              Página para reproducir videos realizada con React, implementando
+              React Hooks, Router, Redux, entre otros. La desarrollé con
+              propósitos de aprendizaje más que nada, pueden ver el código y
+              página web en los siguientes enlaces:
+              <a
+                target="_blank"
+                href="https://github.com/matiasnnr/react-video-page"
+                >Código</a
+              >
+              <a
+                target="_blank"
+                href="https://matiasnnr.github.io/react-video-page/#/"
+                >Página Web</a
+              >
+            </p>
+          </div>
 
-            <div class="container__section-item">
-                <div class="container__section-image">
-                  <img src="./assets/video-page.png" alt="video page" />
-                </div>
-                <p>
-                  Página para reproducir videos realizada con React, implementando React Hooks, Router, Redux, entre otros. La 
-                  desarrollé
-                  con propósitos de aprendizaje más que nada, pueden ver el código y página web
-                  en los siguientes enlaces:
-                  <a
-                    target="_blank"
-                    href="https://github.com/matiasnnr/react-video-page"
-                    >Código</a
-                  >
-                  <a target="_blank" href="https://matiasnnr.github.io/react-video-page/#/">Página Web</a>
-                </p>
-              </div>
-
-              <div class="container__section-item">
-                <div class="container__section-image">
-                  <img src="./assets/java-spring-api.png" alt="java spring api" />
-                </div>
-                <p>
-                  API desarrollada con Java Spring implementando autenticación con JWT y documentada con Swagger. La 
-                  desarrollé
-                  con propósitos de aprendizaje más que nada, pueden ver el código y página web
-                  en los siguientes enlaces:
-                  <a
-                    target="_blank"
-                    href="https://github.com/matiasnnr/JavaSpringAPI"
-                    >Código</a
-                  >
-                  <a target="_blank" href="https://apimarket-sintoken.herokuapp.com/market/api/products/all">API sin Token</a>
-                  <a target="_blank" href="https://apimarket.herokuapp.com/market/api/swagger-ui.html#/">API con Token y Swagger</a>
-                </p>
-              </div>
+          <div class="container__section-item">
+            <div class="container__section-image">
+              <img src="./assets/java-spring-api.png" alt="java spring api" />
+            </div>
+            <p>
+              API desarrollada con Java Spring implementando autenticación con
+              JWT y documentada con Swagger. La desarrollé con propósitos de
+              aprendizaje más que nada, pueden ver el código y página web en los
+              siguientes enlaces:
+              <a
+                target="_blank"
+                href="https://github.com/matiasnnr/JavaSpringAPI"
+                >Código</a
+              >
+              <a
+                target="_blank"
+                href="https://apimarket-sintoken.herokuapp.com/market/api/products/all"
+                >API sin Token</a
+              >
+              <a
+                target="_blank"
+                href="https://apimarket.herokuapp.com/market/api/swagger-ui.html#/"
+                >API con Token y Swagger</a
+              >
+            </p>
+          </div>
 
           <div class="container__section-item">
             <div class="container__section-image">
@@ -139,14 +170,16 @@
               <img src="./assets/instagram-grid.png" alt="instagram grid" />
             </div>
             <p>
-              Diseño de imágenes de Instagram hecho con CSS Grid. Pueden ver el código y página en los
-              siguientes enlaces:
+              Diseño de imágenes de Instagram hecho con CSS Grid. Pueden ver el
+              código y página en los siguientes enlaces:
+              <a target="_blank" href="https://github.com/matiasnnr/grid-css"
+                >Código</a
+              >
               <a
-              target="_blank"
-              href="https://github.com/matiasnnr/grid-css"
-              >Código</a
-            >
-              <a target="_blank" href="https://matiasnnr.github.io/grid-css/instagram-layout/">Página Web</a>
+                target="_blank"
+                href="https://matiasnnr.github.io/grid-css/instagram-layout/"
+                >Página Web</a
+              >
             </p>
           </div>
 
@@ -155,14 +188,16 @@
               <img src="./assets/pinterest-grid.png" alt="pinterest grid" />
             </div>
             <p>
-              Diseño de imágenes de Pinterest hecho con CSS Grid. Pueden ver el código y página en los
-              siguientes enlaces:
+              Diseño de imágenes de Pinterest hecho con CSS Grid. Pueden ver el
+              código y página en los siguientes enlaces:
+              <a target="_blank" href="https://github.com/matiasnnr/grid-css"
+                >Código</a
+              >
               <a
-              target="_blank"
-              href="https://github.com/matiasnnr/grid-css"
-              >Código</a
-            >
-              <a target="_blank" href="https://matiasnnr.github.io/grid-css/pinterest-masonry-layout/">Página Web</a>
+                target="_blank"
+                href="https://matiasnnr.github.io/grid-css/pinterest-masonry-layout/"
+                >Página Web</a
+              >
             </p>
           </div>
 
@@ -171,37 +206,14 @@
               <img src="./assets/landing-grid.png" alt="landing grid" />
             </div>
             <p>
-              Diseño de Landing Page hecho con CSS Grid. Pueden ver el código y página en los
-              siguientes enlaces:
-              <a
-              target="_blank"
-              href="https://github.com/matiasnnr/grid-css"
-              >Código</a
-            >
-              <a target="_blank" href="https://matiasnnr.github.io/grid-css/landing-page-layout/">Página Web</a>
-            </p>
-          </div>
-
-          <div class="container__section-item">
-            <div class="container__section-image">
-              <img src="./assets/tonum.jpg" alt="tonum app" />
-            </div>
-            <p>
-              Este proyecto fue con el que aprendí a programar, se llama Tonum y
-              sirve para sacar números de atención de manera remota a través de
-              tu teléfono móvil. Para este proyecto desarrollé una página web y
-              aplicaciones en Android e iOS. Funciona todo sin problemas, pero
-              la verdad es que está hecho con muy malas prácticas, tanto la
-              página web como las aplicaciones, ya que estaba aprendiendo en ese
-              momento y no sabía de buenas prácticas en programación. De todos
-              modos hoy programo mucho mejor, pueden ver la página y la
-              aplicación en los siguientes enlaces:
+              Diseño de Landing Page hecho con CSS Grid. Pueden ver el código y
+              página en los siguientes enlaces:
+              <a target="_blank" href="https://github.com/matiasnnr/grid-css"
+                >Código</a
+              >
               <a
                 target="_blank"
-                href="https://play.google.com/store/apps/details?id=apps.tonum.tonum"
-                >Google Play</a
-              >
-              <a target="_blank" href="https://tonum-app.firebaseapp.com/"
+                href="https://matiasnnr.github.io/grid-css/landing-page-layout/"
                 >Página Web</a
               >
             </p>
@@ -242,6 +254,30 @@
             </p>
           </div>
 
+          <div class="container__section-item">
+            <div class="container__section-image">
+              <img src="./assets/tonum.jpg" alt="tonum app" />
+            </div>
+            <p>
+              Este proyecto fue con el que aprendí a programar, se llama Tonum y
+              sirve para sacar números de atención de manera remota a través de
+              tu teléfono móvil. Para este proyecto desarrollé una página web y
+              aplicaciones en Android e iOS. Funciona todo sin problemas, pero
+              la verdad es que está hecho con muy malas prácticas, tanto la
+              página web como las aplicaciones, ya que estaba aprendiendo en ese
+              momento y no sabía de buenas prácticas en programación. De todos
+              modos hoy programo mucho mejor, pueden ver la página y la
+              aplicación en los siguientes enlaces:
+              <a
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=apps.tonum.tonum"
+                >Google Play</a
+              >
+              <a target="_blank" href="https://tonum-app.firebaseapp.com/"
+                >Página Web</a
+              >
+            </p>
+          </div>
         </div>
       </section>
       <footer class="container__footer">Hecho por matiasnnr - 2020 👻</footer>
