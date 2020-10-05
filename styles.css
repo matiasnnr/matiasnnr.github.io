@@ -12,28 +12,29 @@ body {
   grid-template-areas:
     "header header header"
     "section section section"
+    "tech tech tech"
     "footer footer footer";
 }
 
-.container__navigation {
+.navigation-fixed {
   background-color: #fff;
   height: 60px;
   width: 100%;
   position: fixed;
   z-index: 100;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.container__navigation a {
+.navigation-fixed a {
   text-decoration: none;
   color: #0e76a8;
   font-size: 1.3em;
   padding: 0 20px;
 }
 
-.container__header {
+.header {
   grid-area: header;
   min-height: 45em;
   width: 100%;
@@ -50,7 +51,7 @@ body {
   background-size: cover;
 }
 
-.container__header-content {
+.header__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -59,7 +60,7 @@ body {
   padding: 20px;
 }
 
-.container__header-left img {
+.header__content-left img {
   height: 150px;
   width: 150px;
   border: 4px solid #fff;
@@ -68,14 +69,14 @@ body {
   -moz-box-shadow: 5px 5px 20px 10px rgba(80, 80, 80, 1);
   box-shadow: 5px 5px 20px 10px rgba(80, 80, 80, 1);
 }
-.container__header-left {
+.header__content-left {
   width: 100%;
   color: #fff;
   font-size: 1.3em;
   margin: 30px 0;
 }
 
-.container__header-right {
+.header__content-right {
   min-height: 45em;
   width: 100%;
   color: #fff;
@@ -84,13 +85,13 @@ body {
   margin-top: 20px;
 }
 
-.container__header-right span {
+.header__content-right span {
   font-weight: bolder;
   color: #fff;
   font-size: 1.4em;
 }
 
-.container__header-right a {
+.header__content-right a {
   margin: 20px 0;
   display: block;
   color: #fff;
@@ -98,12 +99,19 @@ body {
   font-size: 1.3em;
 }
 
-.container__section {
+.section {
   grid-area: section;
   background: #000;
 }
 
-.container__section-content {
+.section-title {
+  margin: 50px 20px;
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.section__content {
   display: grid;
   grid-template-columns: repeat(auto-fill, 1fr);
   gap: 20px;
@@ -111,14 +119,7 @@ body {
   margin: 20px;
 }
 
-.container__section-title {
-  margin: 50px 20px;
-  font-size: 1.4em;
-  color: #fff;
-  font-weight: bold;
-}
-
-.container__section-item {
+.section__content-item {
   border-radius: 5px;
   padding: 10px;
   background-color: #f2f2f2;
@@ -127,13 +128,7 @@ body {
   transition: 0.5s;
 }
 
-.container__section-image {
-  height: 300px;
-  width: auto;
-  padding: 5px 0;
-}
-
-.container__section-item a {
+.section__content-item a {
   display: block;
   text-align: end;
   margin: 20px;
@@ -141,18 +136,72 @@ body {
   font-weight: bold;
 }
 
-.container__section-item:hover {
+.section__content-item:hover {
   transform: scale(1.02);
   z-index: 90;
 }
 
-.container__section-item img {
+.section__content-image {
+  height: 300px;
+  width: auto;
+  padding: 5px 0;
+}
+
+.section__content-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.container__footer {
+.tech {
+  grid-area: tech;
+  background: #000;
+  padding-bottom: 50px;
+}
+
+.tech-title {
+  margin: 50px 20px;
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tech__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.tech__content-item {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #0e76a8;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.tech__content-item:hover {
+  transform: scale(1.02);
+  z-index: 90;
+}
+
+.tech__content-image {
+  height: 250px;
+  width: 250px;
+  padding: 20px 0;
+}
+
+.tech__content-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer {
   grid-area: footer;
   width: 100%;
   height: 60px;
@@ -169,14 +218,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .container__header-content {
+  .header__content {
     display: flex;
     justify-content: space-around;
     align-content: center;
     margin-top: 150px;
     padding: 50px;
   }
-  .container__header-left img {
+  .header__content-left img {
     height: 150px;
     width: 150px;
     border: 4px solid #fff;
@@ -185,13 +234,13 @@ body {
     -moz-box-shadow: 5px 5px 20px 10px rgba(80, 80, 80, 1);
     box-shadow: 5px 5px 20px 10px rgba(80, 80, 80, 1);
   }
-  .container__header-left {
+  .header__content-left {
     width: 40%;
     color: #fff;
     font-size: 1.3em;
   }
 
-  .container__header-right {
+  .header__content-right {
     min-height: 45em;
     width: 60%;
     color: #fff;
@@ -200,14 +249,28 @@ body {
     margin-top: 20px;
   }
 
-  .container__section-content {
+  .section__content {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     gap: 30px;
     justify-content: center;
   }
 
-  .container__section-title {
+  .section-title {
+    margin: 50px;
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .tech__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .tech-title {
     margin: 50px;
     font-size: 1.4em;
     color: #fff;
