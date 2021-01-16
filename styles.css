@@ -108,7 +108,14 @@ body {
 }
 
 .section-title {
-  margin: 50px 20px;
+  margin: 50px;
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  margin: 50px;
   font-size: 1.4em;
   color: #fff;
   font-weight: bold;
@@ -266,6 +273,13 @@ body {
   }
 
   .section-title {
+    margin: 50px;
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .section-subtitle {
     margin: 50px;
     font-size: 1.4em;
     color: #fff;
